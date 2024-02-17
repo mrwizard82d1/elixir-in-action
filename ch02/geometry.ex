@@ -8,7 +8,9 @@ defmodule Geometry do
 
   # A function whose body is a single expression can be defined using a condensed form
   # on a single line
-  def square_area(a), do: a * a
+  # Also illustrates one function calling another function **in the same module**; specifically,
+  # one need **not** specify the module name
+  def square_area(a), do: rectangle_area(a, a)
 
   # First nested module
   defmodule Rectangle do
