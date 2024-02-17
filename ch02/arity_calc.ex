@@ -1,6 +1,5 @@
 defmodule Calculator do
-  # The function `Calculator.add/1` delegates its implementaton to `Calculator.add/2`
-  def add(a), do: add(a, 0)
-
-  def add(a, b), do: a + b
+  # A simpler way to "delegate": use default argument values
+  # Note that this syntax actually creates **two** function definitions
+  def add(a, b \\ 0), do: a + b
 end
