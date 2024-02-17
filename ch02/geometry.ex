@@ -12,11 +12,9 @@ defmodule Geometry do
 
   # First nested module
   defmodule Rectangle do
-
   end
 end
 
 # Second module using compound name
 defmodule Geometry.Circle do
-
 end
