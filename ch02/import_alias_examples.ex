@@ -16,3 +16,12 @@ defmodule MyModuleWithAlias do
   end
 
 end
+
+defmodule MyModuleWithShortAlias do
+  alias Geometry.Rectangle, as: Rectangle
+
+  def my_function do
+    Rectangle.area(3, 4)
+  end
+
+end
